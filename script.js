@@ -23,3 +23,14 @@ themeToggle.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   document.body.classList.toggle("scrolled", window.scrollY > 8);
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", () => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+    target.classList.remove("highlight");
+    void target.offsetWidth;
+    target.classList.add("highlight");
+    target.addEventListener("animationend", () => target.classList.remove("highlight"), { once: true });
+  });
+});
