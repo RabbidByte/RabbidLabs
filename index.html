@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RabbidLabs placeholder site built as a static GitHub Pages landing page with dark/light themes."
+    />
+    <title>RabbidLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" id="topbar">
+        <a class="brand" href="#home" aria-label="RabbidLabs home">
+          <img src="images/logos/Logo.svg" alt="RabbidLabs logo" class="brand-mark" />
+          <span>RabbidLabs</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#launch">Launch</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-label">Dark mode</span>
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero card" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Static GitHub Pages placeholder</p>
+            <h1>RabbidLabs is preparing a clean launch page for cybersecurity solutions.</h1>
+            <p class="lede">
+              This single-page site is built as plain HTML, CSS, and JavaScript—no Jekyll required.
+              It includes a dark-by-default palette with an elegant light-mode alternative and subtle
+              scroll-reactive detail.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#launch">See what’s next</a>
+              <a class="button secondary" href="#about">Explore the concept</a>
+            </div>
+            <ul class="feature-list">
+              <li>Static deployment ready for GitHub Pages</li>
+              <li>Theme toggle with saved preference</li>
+              <li>Professional, minimal visual system</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel" aria-label="Brand preview">
+            <img src="images/logos/Logo.png" alt="RabbidLabs transparent logo" class="hero-logo" />
+            <div class="mini-card">
+              <p>Current status</p>
+              <strong>Placeholder launch site</strong>
+              <span>Replace this copy when the company story is ready.</span>
+            </div>
+          </aside>
+        </section>
+
+        <section class="grid two-up" id="about">
+          <article class="card panel">
+            <p class="eyebrow">About</p>
+            <h2>Professional by design, flexible by structure.</h2>
+            <p>
+              The color system, spacing, and motion are tuned for a confident technology brand while
+              staying calm, readable, and modern.
+            </p>
+          </article>
+
+          <article class="card panel" id="launch">
+            <p class="eyebrow">Launch notes</p>
+            <h2>Static page, GitHub Pages ready, no Jekyll dependency.</h2>
+            <p>
+              This is a clean foundation you can publish directly from the repository root without
+              any build step.
+            </p>
+          </article>
+        </section>
+
+        <section class="card contact-card" id="contact">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to replace the placeholder content?</h2>
+          <p>
+            Add your mission statement, product overview, and contact links here when the company is
+            ready to launch publicly.
+          </p>
+          <a class="button primary" href="mailto:hello@rabbidlabs.example">hello@rabbidlabs.example</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
