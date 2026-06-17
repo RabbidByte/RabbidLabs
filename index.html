@@ -8,13 +8,41 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5QXM7N29');</script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="RabbidLabs: Compliance isn't the problem, execution is. We help you build a cybersecurity program that works when it matters most."
-    />
-    <title>RabbidLabs - Home</title>
+
+    <!-- Primary Meta Tags -->
+    <title>RabbidLabs | Cybersecurity Operations Consulting</title>
+    <meta name="title" content="RabbidLabs | Cybersecurity Operations Consulting" />
+    <meta name="description" content="RabbidLabs helps businesses build structured, measurable, and repeatable cybersecurity programs — so when something goes wrong, your team already knows what to do." />
+    <meta name="author" content="RabbidLabs" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rabbidlabs.com/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rabbidlabs.com/" />
+    <meta property="og:site_name" content="RabbidLabs" />
+    <meta property="og:title" content="RabbidLabs | Cybersecurity Operations Consulting" />
+    <meta property="og:description" content="RabbidLabs helps businesses build structured, measurable, and repeatable cybersecurity programs — so when something goes wrong, your team already knows what to do." />
+    <meta property="og:image" content="https://rabbidlabs.com/images/logos/Logo.png" />
+    <meta property="og:image:alt" content="RabbidLabs logo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rabbidlabs.com/" />
+    <meta name="twitter:title" content="RabbidLabs | Cybersecurity Operations Consulting" />
+    <meta name="twitter:description" content="RabbidLabs helps businesses build structured, measurable, and repeatable cybersecurity programs — so when something goes wrong, your team already knows what to do." />
+    <meta name="twitter:image" content="https://rabbidlabs.com/images/logos/Logo.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/logos/Logo.svg" />
+    <link rel="icon" type="image/png" href="/images/logos/Logo.png" />
+    <link rel="apple-touch-icon" href="/images/logos/Logo.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,19 +50,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RabbidLabs",
+      "url": "https://rabbidlabs.com",
+      "logo": "https://rabbidlabs.com/images/logos/Logo.png",
+      "description": "RabbidLabs helps businesses build structured, measurable, and repeatable cybersecurity programs so they are ready when it matters most.",
+      "email": "hello@rabbidlabs.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@rabbidlabs.com",
+        "contactType": "customer support"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: WebSite (enables sitelinks search box eligibility) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RabbidLabs",
+      "url": "https://rabbidlabs.com"
+    }
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QXM7N29"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <div class="site-shell">
       <header class="topbar" id="topbar">
         <a class="brand" href="#home" aria-label="RabbidLabs home">
-          <img src="images/logos/Logo.svg" alt="RabbidLabs logo" class="brand-mark" />
+          <img src="images/logos/Logo.svg" alt="RabbidLabs logo" class="brand-mark" width="42" height="42" />
         </a>
 
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#launch">Launch</a>
           <a href="#contact">Contact</a>
@@ -47,58 +104,69 @@
       </header>
 
       <main>
-        <section class="hero card" id="home">
+        <section class="hero card" id="home" aria-labelledby="hero-heading">
           <div class="hero-copy">
             <p class="eyebrow">RabbidLabs Is Alive</p>
-            <h1>Building the future of cybersecurity operations.</h1>
+            <h1 id="hero-heading">Building the future of cybersecurity operations.</h1>
             <p class="lede">
-              RabbidLabs' Launch is focused on building the future of cybersecurity operations
+              RabbidLabs is focused on building the future of cybersecurity operations
               through a structured, managed, measured, and repeatable process.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#launch">See what’s next</a>
+              <a class="button primary" href="#launch">See what's next</a>
               <a class="button secondary" href="#about">Explore the concept</a>
             </div>
             <ul class="feature-list">
-              <li>Structured Response</li>
-              <li>Measurable performance</li>
-              <li>Repeatable processes</li>
-              <li>and more</li>
+              <li>Structured incident response</li>
+              <li>Measurable security performance</li>
+              <li>Repeatable cybersecurity processes</li>
+              <li>Board-ready program reporting</li>
             </ul>
           </div>
         </section>
 
         <section class="grid two-up">
-          <article class="card panel" id="about">
+          <article class="card panel" id="about" aria-labelledby="about-heading">
             <p class="eyebrow">About</p>
-            <h2>Planning for the worst-case scenario.</h2>
+            <h2 id="about-heading">Planning for the worst-case scenario.</h2>
             <p>
-              The worst day in cybersecurity is the one nobody planned for. RabbidLabs makes sure that when something goes wrong, your business already knows what to do, who owns it, and how to recover, so the crisis you feared becomes the one you were ready for.
-            </p><p>
+              The worst day in cybersecurity is the one nobody planned for. RabbidLabs makes sure that when something goes wrong, your business already knows what to do, who owns it, and how to recover — so the crisis you feared becomes the one you were ready for.
+            </p>
+            <p>
               RabbidLabs helps build the kind of security program your insurer rewards and your board understands. Do we have your attention yet?
             </p>
           </article>
 
-          <article class="card panel" id="launch">
+          <article class="card panel" id="launch" aria-labelledby="launch-heading">
             <p class="eyebrow">Launch notes</p>
-            <h2>Currently compiling ...</h2>
+            <h2 id="launch-heading">Currently compiling&hellip;</h2>
             <p>
-              We're heads-down in the lab on the first release for RabbidLabs.  The details are staying under wraps for now, but this changelog is about to get a lot more interesting, so check back.
+              We're heads-down in the lab on the first release for RabbidLabs. The details are staying under wraps for now, but this changelog is about to get a lot more interesting — check back soon.
             </p>
           </article>
         </section>
 
-        <section class="card contact-card" id="contact">
+        <section class="card contact-card" id="contact" aria-labelledby="contact-heading">
           <p class="eyebrow">Contact</p>
-          <h2>Get an early look.</h2>
+          <h2 id="contact-heading">Get an early look.</h2>
           <p>
             Want an early look, or just to compare notes on where your business is exposed? Reach out and we'll get back to you personally.
           </p>
           <a class="button primary" href="mailto:hello@rabbidlabs.com">hello@rabbidlabs.com</a>
         </section>
       </main>
+
+      <footer class="site-footer" aria-label="Site footer">
+        <p>&copy; <span id="footer-year"></span> RabbidLabs. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#launch">Launch</a>
+          <a href="mailto:hello@rabbidlabs.com">Contact</a>
+        </nav>
+      </footer>
     </div>
 
     <script src="script.js"></script>
+    <script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
   </body>
 </html>
