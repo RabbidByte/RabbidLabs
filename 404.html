@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5QXM7N29');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>404 — Page Not Found | RabbidLabs</title>
+    <meta name="robots" content="noindex, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/logos/Logo.svg" />
+    <link rel="icon" type="image/png" href="/images/logos/Logo.png" />
+    <link rel="apple-touch-icon" href="/images/logos/Logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <style>
+      .error-section {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem 1.5rem;
+      }
+      .error-code {
+        font-size: clamp(6rem, 20vw, 12rem);
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0 0 0.25rem;
+      }
+      .error-section h1 {
+        font-size: clamp(1.4rem, 4vw, 2rem);
+        margin: 0 0 0.75rem;
+      }
+      .error-section p {
+        color: var(--muted);
+        max-width: 38ch;
+        line-height: 1.6;
+        margin: 0 0 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QXM7N29"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="site-shell">
+      <header class="topbar" id="topbar">
+        <a class="brand" href="/" aria-label="RabbidLabs home">
+          <img src="/images/logos/Logo.svg" alt="RabbidLabs logo" class="brand-mark" width="42" height="42" />
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/#about">About</a>
+          <a href="/#launch">Launch</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-label">Dark mode</span>
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="card error-section" aria-labelledby="error-heading">
+          <p class="error-code" aria-hidden="true">404</p>
+          <p class="eyebrow">Page not found</p>
+          <h1 id="error-heading">This page doesn't exist.</h1>
+          <p>The URL you followed may be broken, or the page may have been moved. Head back to the lab.</p>
+          <a class="button primary" href="/">Back to RabbidLabs</a>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Site footer">
+        <p>&copy; <span id="footer-year"></span> RabbidLabs. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <a href="/#about">About</a>
+          <a href="/#launch">Launch</a>
+          <a href="mailto:hello@rabbidlabs.com">Contact</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="/script.js"></script>
+    <script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
