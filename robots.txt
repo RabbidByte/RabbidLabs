@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rabbidlabs.com/sitemap.xml
+Sitemap: https://www.rabbidlabs.com/sitemap.xml
