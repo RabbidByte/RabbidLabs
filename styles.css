@@ -76,15 +76,11 @@ body.scrolled .topbar { transform: translateY(4px); border-color: color-mix(in s
   color: var(--text); font-weight: 700; letter-spacing: -0.02em;
 }
 .brand-mark { display: block; height: 48px; width: auto; }
-/* The wordmark is near-white (rgb 191,219,240), so on the light theme it needs a
-   dark chip behind it to stay legible. On dark it sits directly on the bar. */
-:root[data-theme="light"] .brand-mark {
-  /* box-sizing is border-box globally, so this padding sits inside the 48px and
-     the topbar keeps the same height in both themes. */
-  padding: 4px 8px;
-  border-radius: 12px;
-  background: #0b1524;
-}
+/* The wordmark is near-white, so the light theme uses a variant with it recoloured
+   to --text. Both sit directly on the bar; no backing plate in either theme. */
+.brand-mark-light { display: none; }
+:root[data-theme="light"] .brand-mark-dark { display: none; }
+:root[data-theme="light"] .brand-mark-light { display: block; }
 .nav-links { display: flex; gap: 1.1rem; align-items: center; }
 .nav-links a { color: var(--muted); font-weight: 500; transition: color 150ms ease; }
 .nav-links a:hover { color: var(--text); }
