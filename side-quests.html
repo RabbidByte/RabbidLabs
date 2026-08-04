@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. First up: RabbidBracket, tournament software for steel-tip darts."
+    />
+    <title>Side Quests — RabbidLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" id="topbar">
+        <a class="brand" href="index.html" aria-label="RabbidLabs home">
+          <img src="images/logos/Logo.svg" alt="RabbidLabs logo" class="brand-mark" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#launch">Launch</a>
+          <a href="side-quests.html" aria-current="page">Side Quests</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-label">Dark mode</span>
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero single card" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Side Quests</p>
+            <h1>The builds that aren’t the boss fight.</h1>
+            <p class="lede">
+              The flagship is cybersecurity operations. Side Quests are everything else we ship:
+              standalone products, built properly, that solve a real problem for a real crowd and
+              fund the work happening in the lab. Different problem, same engineering bar.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#rabbidbracket">Meet the first one</a>
+              <a class="button secondary" href="index.html#launch">Back to the flagship</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="card quest-card" id="rabbidbracket">
+          <div class="quest-head">
+            <img
+              src="images/logos/rabbidbracket-mark.svg"
+              alt="RabbidBracket logo"
+              class="quest-mark"
+            />
+            <div class="quest-title">
+              <p class="eyebrow">Side Quest 01</p>
+              <h2>RabbidBracket</h2>
+            </div>
+            <span class="badge soon">Announced · Releasing soon</span>
+          </div>
+
+          <p class="quest-tagline">Run the tournament. Not the paperwork.</p>
+
+          <p>
+            RabbidBracket is a tournament facilitator for steel-tip darts, built for venues,
+            leagues, and charity shoots. Configure the format, enter the players, and it handles the
+            draw, the boards, the standings, the payouts, and the big screen, start to champion.
+          </p>
+
+          <p>
+            It exists because running a tournament from a clipboard and a whiteboard is a second
+            job on top of hosting one. Brackets get redrawn by hand, boards get double-booked, and
+            the payout math gets settled in the parking lot. RabbidBracket takes that whole job.
+          </p>
+
+          <ul class="quest-features">
+            <li>Automatic bracket generation with random seeding and byes</li>
+            <li>Live board scheduling that won’t double-book a board</li>
+            <li>Payouts that reconcile to the cent</li>
+            <li>Big-screen display for boards, brackets, and standings</li>
+            <li>Mass score entry for paper-run group stages</li>
+            <li>Fix a wrong score and watch the bracket cascade correctly</li>
+            <li>Outcome-based scoring: legs won, not every dart thrown</li>
+            <li>Event history and resumable tournaments</li>
+          </ul>
+
+          <div class="stat-row">
+            <div class="mini-card">
+              <p>Formats</p>
+              <strong>6</strong>
+              <span>Bracket and group-stage options</span>
+            </div>
+            <div class="mini-card">
+              <p>Entry types</p>
+              <strong>3</strong>
+              <span>Singles, doubles, and draw formats</span>
+            </div>
+            <div class="mini-card">
+              <p>Big screen</p>
+              <strong>6</strong>
+              <span>Views for boards and standings</span>
+            </div>
+            <div class="mini-card">
+              <p>Themes</p>
+              <strong>12</strong>
+              <span>Plus your venue’s own logo</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="https://www.rabbidbracket.com" rel="noopener">
+              Visit rabbidbracket.com
+            </a>
+            <a class="button secondary" href="https://www.rabbidbracket.com" rel="noopener">
+              Request a demo
+            </a>
+          </div>
+        </section>
+
+        <section class="grid two-up">
+          <article class="card panel" id="how-side-quests-work">
+            <p class="eyebrow">How this works</p>
+            <h2>Funded here, focused there.</h2>
+            <p>
+              Side Quests aren’t a pivot and they aren’t a hobby. Each one is a finished product with
+              its own audience, its own site, and its own support. What they share is the revenue:
+              every Side Quest pays for engineering time on the RabbidLabs flagship, so the security
+              work ships on our schedule instead of someone else’s.
+            </p>
+          </article>
+
+          <article class="card panel" id="next-quest">
+            <p class="eyebrow">Up next</p>
+            <h2>The board’s not full yet.</h2>
+            <p>
+              One announced, more in the backlog. If you’ve got a job that’s currently being done
+              with a spreadsheet, a clipboard, and a lot of patience, we’re interested in hearing
+              about it.
+            </p>
+            <div class="hero-actions">
+              <a class="button secondary" href="mailto:hello@rabbidlabs.com">hello@rabbidlabs.com</a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
