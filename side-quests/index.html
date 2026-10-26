@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Side Quests | RabbidLabs</title>
     <meta name="title" content="Side Quests | RabbidLabs" />
-    <meta name="description" content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. First up: RabbidBracket, tournament software for steel-tip darts." />
+    <meta name="description" content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. Now shipping: RabbidBracket, tournament software for steel-tip darts. In development: RabbidMARC, DMARC analytics." />
     <meta name="author" content="RabbidLabs" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.rabbidlabs.com/side-quests/" />
@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://www.rabbidlabs.com/side-quests/" />
     <meta property="og:site_name" content="RabbidLabs" />
     <meta property="og:title" content="Side Quests | RabbidLabs" />
-    <meta property="og:description" content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. First up: RabbidBracket, tournament software for steel-tip darts." />
+    <meta property="og:description" content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. Now shipping: RabbidBracket, tournament software for steel-tip darts. In development: RabbidMARC, DMARC analytics." />
     <meta property="og:image" content="https://www.rabbidlabs.com/web-app-manifest-512x512.png" />
     <meta property="og:image:alt" content="RabbidLabs logo" />
 
@@ -35,7 +35,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://www.rabbidlabs.com/side-quests/" />
     <meta name="twitter:title" content="Side Quests | RabbidLabs" />
-    <meta name="twitter:description" content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. First up: RabbidBracket, tournament software for steel-tip darts." />
+    <meta name="twitter:description" content="Side Quests are the products RabbidLabs ships outside the cybersecurity flagship. Now shipping: RabbidBracket, tournament software for steel-tip darts. In development: RabbidMARC, DMARC analytics." />
     <meta name="twitter:image" content="https://www.rabbidlabs.com/web-app-manifest-512x512.png" />
 
     <!-- Favicon -->
@@ -88,6 +88,22 @@
       "applicationCategory": "BusinessApplication",
       "url": "https://www.rabbidbracket.com",
       "description": "Tournament facilitation software for steel-tip darts. Handles the draw, board scheduling, standings, payouts, and the big screen for venues, leagues, and charity shoots.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RabbidLabs",
+        "url": "https://www.rabbidlabs.com"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: RabbidMARC -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RabbidMARC",
+      "applicationCategory": "SecurityApplication",
+      "description": "DMARC analytics platform for Microsoft 365 environments. Reads DMARC reports, identifies who is sending mail as your domain, and guides the path to enforcement.",
       "publisher": {
         "@type": "Organization",
         "name": "RabbidLabs",
@@ -213,6 +229,76 @@
           </div>
         </section>
 
+        <section class="card quest-card" id="rabbidmarc" aria-labelledby="rabbidmarc-heading">
+          <div class="quest-head">
+            <img
+              src="/images/logos/rabbidlabs-mark.png"
+              alt="RabbidLabs logo"
+              class="quest-mark"
+              width="208"
+              height="58"
+            />
+            <div class="quest-title">
+              <p class="eyebrow">Side Quest 02</p>
+              <h2 id="rabbidmarc-heading">RabbidMARC</h2>
+            </div>
+            <span class="badge soon">Announced &middot; In development</span>
+          </div>
+
+          <p class="quest-tagline">Read the reports. Not the XML.</p>
+
+          <p>
+            RabbidMARC is a DMARC analytics platform for Microsoft 365 environments. It reads the
+            aggregate reports that mailbox providers send back about your domains, and shows you who
+            is sending mail as you and whether it is passing.
+          </p>
+
+          <p>
+            It exists because those reports arrive as zipped XML from dozens of receivers, and
+            nobody reads them by hand. Getting to <code>p=reject</code> safely means finding every
+            legitimate sender first, and RabbidMARC does that legwork. It is in use internally at
+            RabbidLabs today, and we are exploring making it available more broadly.
+          </p>
+
+          <ul class="quest-features">
+            <li>Read-only collection from Microsoft 365 mailboxes through Microsoft Graph</li>
+            <li>Multiple domains, subdomains, and mailboxes in one place</li>
+            <li>Sender identification that turns raw IPs into named services</li>
+            <li>Live DNS checks of your DMARC, SPF, and DKIM posture</li>
+            <li>A guided path from <code>p=none</code> to <code>p=reject</code></li>
+            <li>Alerts for new unauthenticated senders and compliance drops</li>
+            <li>Compliance over time, with DKIM and SPF alignment breakdowns</li>
+            <li>Aggregate, forensic, and TLS-RPT report support</li>
+          </ul>
+
+          <div class="stat-row">
+            <div class="mini-card">
+              <p>Report types</p>
+              <strong>3</strong>
+              <span>Aggregate, forensic, and TLS-RPT</span>
+            </div>
+            <div class="mini-card">
+              <p>Mail access</p>
+              <strong>Read-only</strong>
+              <span>It never moves, edits, or sends mail</span>
+            </div>
+            <div class="mini-card">
+              <p>DNS checks</p>
+              <strong>3</strong>
+              <span>DMARC, SPF, and DKIM</span>
+            </div>
+            <div class="mini-card">
+              <p>Status</p>
+              <strong>Internal</strong>
+              <span>In use at RabbidLabs today</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <span class="button primary" role="link" aria-disabled="true">Coming Soon</span>
+          </div>
+        </section>
+
         <section class="grid two-up">
           <article class="card panel" id="how-side-quests-work" aria-labelledby="how-heading">
             <p class="eyebrow">How this works</p>
@@ -229,7 +315,7 @@
             <p class="eyebrow">Up next</p>
             <h2 id="next-heading">The board's not full yet.</h2>
             <p>
-              One announced, more in the backlog. If you've got a job that's currently being done
+              Two announced, more in the backlog. If you've got a job that's currently being done
               with a spreadsheet, a clipboard, and a lot of patience, we're interested in hearing
               about it.
             </p>
